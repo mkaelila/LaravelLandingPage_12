@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    h1,
+    form   {
+        text-align: center;
+        color: deeppink;
+    }
+    p{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="" style="text-align: center">
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="password" id="password">
+        <input type="email" placeholder="email" id="email">
+        <input type="button" value="Login" id="tombol">
+        <img src="ft.jpg">
+    </form>
+    <p id="error-message"></p>
+    <script>
+        const bnTombol = document.querySelector("#tombol");
+        const txUsername = document.querySelector("#username");
+        const txPassword = document.querySelector("#password");
+
+        const errorMessage = document.querySelector("#error-message");
+
+        bnTombol.addEventListener("click", function (){
+            // console.log(txUsername.value);
+            // if(txUsername.value == "kaylila"){
+            //    console.log("Username anda benar")
+            //}
+            //if(txPassword.value == "lila"){
+            //    console.log("Password anda benar")
+            //}
+            if (txUsername.value == "kaylila" && txPassword.value == "lila"){
+                window.location = "index.html"
+            } else{
+                errorMessage.textContent= "Username dan password anda salah";
+            }
+        }); 
+    </script>
+</body>
+</html>
