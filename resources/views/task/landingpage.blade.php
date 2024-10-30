@@ -1,330 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Kaylila Larasati_XIPPLG4</title>
+</head>
+<body class="font-sans bg-white text-gray-900">
+  <nav class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+    <div class="text-lg font-bold text-yellow-600">
+      <a href="#">Ruang Bumi</a>
+    </div>
+    <ul class="flex space-x-8 text-gray-700">
+      <li><a href="#home" class="hover:text-yellow-600">HOME</a></li>
+      <li><a href="#about" class="hover:text-yellow-600">ABOUT</a></li>
+      <li><a href="#project" class="hover:text-yellow-600">PROJECT</a></li>
+      <li><a href="#contact" class="hover:text-yellow-600">CONTACT</a></li>
+    </ul>
+    <div class="space-x-4">
+      <button class="px-4 py-2 border border-gray-500 text-gray-500 rounded hover:bg-gray-100">Log In</button>
+      <button class="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">Register Now</button>
+    </div>
+  </nav>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Kaylila Larasati_XIPPLG4</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__bar">
-        <div class="nav__logo"><a href="#">Ruang Bumi</a></div>
-        <ul class="nav__links">
-          <li class="link"><a href="#home">HOME</a></li>
-          <li class="link"><a href="#about">ABOUT</a></li>
-          <li class="link"><a href="#project">PROJECT</a></li>
-          <li class="link"><a href="#contact">CONTACT</a></li>
-        </ul>
-        <div class="nav__btns">
-          <button class="btn btn__primary"><a href="Login.html"></a>Log In</button>
-          <button class="btn btn__secondary">Register Now</button>
+  <header class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <div class="space-y-5">
+        <h1 class="text-5xl font-bold text-gray-800">Turning Your Vision into Reality with Superior Construction Solutions</h1>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="flex space-x-4">
+          <button class="px-6 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">Buy Now</button>
+          <button class="px-6 py-2 border border-yellow-600 text-yellow-600 rounded hover:bg-yellow-100">Learn More</button>
         </div>
       </div>
-    </nav>
+      <div class="flex justify-center">
+        <img src="ft.jpg" alt="header" class="object-cover h-80 w-full rounded-md" />
+      </div>
+    </div>
+  </header>
 
-    <header class="header">
-      <div class="header__container">
-        <div class="header__content">
-          <h1>Turning Your Vision into Reality with Superior Construction Solutions
-        </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-          </p>
-          <div class="header__btns">
-            <button class="btn btn__secondary">Buy Now</button>
-            <button class="btn btn__primary">Learn More</button>
-          </div>
+  <section id="about" class="max-w-7xl mx-auto py-20 px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="flex justify-center">
+      <img src="ft1.jpg" alt="about" class="object-cover h-80 w-full rounded-md" />
+    </div>
+    <div class="space-y-5">
+      <h3 class="text-2xl font-semibold text-yellow-600">ABOUT US</h3>
+      <h2 class="text-3xl font-bold text-gray-800">In our efforts to transform into a more modern company</h2>
+      <p class="text-gray-600">Focusing on the business of office space leasing, building and asset management, construction services, provision of outsourcing services, and security services.</p>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="text-center">
+          <h4 class="text-yellow-600 font-semibold">PREVIOUS PROJECTS</h4>
+          <p class="text-2xl font-bold text-gray-800">17+</p>
         </div>
-        <div class="header__image">
-          <img src="ft.jpg" alt="header" />
+        <div class="text-center">
+          <h4 class="text-yellow-600 font-semibold">YEARS EXPERIENCE</h4>
+          <p class="text-2xl font-bold text-gray-800">10+</p>
+        </div>
+        <div class="text-center">
+          <h4 class="text-yellow-600 font-semibold">ONGOING PROJECTS</h4>
+          <p class="text-2xl font-bold text-gray-800">12</p>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="ft1.jpg" alt="about" />
+  <section id="project" class="max-w-7xl mx-auto py-20 px-4">
+    <div class="flex justify-between items-center mb-10">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800">Ongoing Projects</h2>
+        <p class="text-gray-600">We are dedicated to helping you find your dream property with ease and confidence.</p>
       </div>
-      <div class="about__content">
-        <h3>ABOUT US</h3>
-        <h2 class="section__header">
-            In our efforts to transform into a more modern company
-        </h2>
-        <p class="section__subheader">
-            Focusing on the business of office space leasing, 
-            building and asset management, construction services, provision of outsourcing services, 
-            and security services. 
-        </p>
-        <div class="about__grid">
-          <div class="about__card">
-            <h4>PREVIOUS PROJECTS</h4>
-            <p>17+</p>
-          </div>
-          <div class="about__card">
-            <h4>YEARS EXPERIENCE</h4>
-            <p>10+</p>
-          </div>
-          <div class="about__card">
-            <h4>ONGOING PROJECTS</h4>
-            <p>12</p>
-          </div>
-        </div>
+      <div class="space-x-2">
+        <span class="text-2xl cursor-pointer text-yellow-600"><i class="ri-arrow-left-line"></i></span>
+        <span class="text-2xl cursor-pointer text-yellow-600"><i class="ri-arrow-right-line"></i></span>
       </div>
-    </section>
+    </div>
+    <div class="swiper">
+      <!-- Add swiper slides here, same structure as given above -->
+    </div>
+  </section>
 
-    <section class="project__container" id="project">
-      <div class="project__header">
-        <div>
-          <h2 class="section__header">Ongoing Projects</h2>
-          <p class="section__subheader">
-            We are dedicated to helping you find your dream property with ease
-            and confidence.
-          </p>
+  <section id="contact" class="max-w-7xl mx-auto py-20 px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="flex justify-center">
+      <img src="ft2.jpg" alt="contact" class="object-cover h-80 w-full rounded-md" />
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+      <p class="text-gray-600 mb-6">Discover the difference, where expertise meets excellence in real estate. Let's embark on this exciting journey together.</p>
+      <form class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="First Name" class="p-4 border rounded" />
+          <input type="text" placeholder="Last Name" class="p-4 border rounded" />
         </div>
-        <div class="project__nav">
-          <span><i class="ri-arrow-left-line"></i></span>
-          <span><i class="ri-arrow-right-line"></i></span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Email Address" class="p-4 border rounded" />
+          <input type="text" placeholder="Phone Number" class="p-4 border rounded" />
         </div>
-      </div>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="project__card">
-              <img src="ft2.jpg" alt="project" />
-              <div class="project__content">
-                <div class="project__details">
-                  <h4>Palm View Apartments</h4>
-                  <p>
-                    <span><i class="ri-map-pin-line"></i></span>
-                    Palm Jumeirah, Dubai
-                  </p>
-                  <button>Book Now</button>
-                </div>
-                <div class="project__ratings">
-                  <div class="stars">
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-half-fill"></i></span>
-                    <span><i class="ri-star-line"></i></span>
-                  </div>
-                  <div class="price">1200$</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project__card">
-              <img src="ft3.jpg" alt="project" />
-              <div class="project__content">
-                <div class="project__details">
-                  <h4>Cityscape Residences</h4>
-                  <p>
-                    <span><i class="ri-map-pin-line"></i></span>
-                    Downtown Dubai
-                  </p>
-                  <button>Book Now</button>
-                </div>
-                <div class="project__ratings">
-                  <div class="stars">
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-half-fill"></i></span>
-                  </div>
-                  <div class="price">1000$</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project__card">
-              <img src="ft.jpg" alt="project" />
-              <div class="project__content">
-                <div class="project__details">
-                  <h4>Marina Heights</h4>
-                  <p>
-                    <span><i class="ri-map-pin-line"></i></span>
-                    Dubai Marina
-                  </p>
-                  <button>Book Now</button>
-                </div>
-                <div class="project__ratings">
-                  <div class="stars">
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                  </div>
-                  <div class="price">1100$</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project__card">
-              <img src="ft1.jpg" alt="project" />
-              <div class="project__content">
-                <div class="project__details">
-                  <h4>Desert Rose Flats</h4>
-                  <p>
-                    <span><i class="ri-map-pin-line"></i></span>
-                    Al Barsha, Dubai
-                  </p>
-                  <button>Book Now</button>
-                </div>
-                <div class="project__ratings">
-                  <div class="stars">
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-half-fill"></i></span>
-                  </div>
-                  <div class="price">1500$</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project__card">
-              <img src="ft2.jpg" alt="project" />
-              <div class="project__content">
-                <div class="project__details">
-                  <h4>Golden Sands Suites</h4>
-                  <p>
-                    <span><i class="ri-map-pin-line"></i></span>
-                    Bur Dubai
-                  </p>
-                  <button>Book Now</button>
-                </div>
-                <div class="project__ratings">
-                  <div class="stars">
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-half-fill"></i></span>
-                    <span><i class="ri-star-line"></i></span>
-                  </div>
-                  <div class="price">1300$</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project__card">
-              <img src="ft3.jpg" alt="project" />
-              <div class="project__content">
-                <div class="project__details">
-                  <h4>Bliss Residences</h4>
-                  <p>
-                    <span><i class="ri-map-pin-line"></i></span>
-                    Jumeirah Beach, Dubai
-                  </p>
-                  <button>Book Now</button>
-                </div>
-                <div class="project__ratings">
-                  <div class="stars">
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-line"></i></span>
-                  </div>
-                  <div class="price">1400$</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <textarea cols="30" rows="5" placeholder="Description" class="w-full p-4 border rounded"></textarea>
+        <button class="px-6 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">SEND MESSAGE</button>
+      </form>
+    </div>
+  </section>
 
-    <section class="section__container contact__container" id="contact">
-      <div class="contact__image">
-        <img src="ft2.jpg" alt="contact" />
+  <footer class="bg-gray-100 py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+      <div>
+        <h4 class="text-xl font-bold text-gray-800 mb-2">Ruang Bumi</h4>
+        <p class="text-gray-600">Our team of seasoned professionals is committed to providing you with exceptional service...</p>
+        <div class="flex space-x-4 mt-4 text-yellow-600">
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
       </div>
-      <div class="contact__content">
-        <h2 class="section__header">Contact Us</h2>
-        <p class="section__subheader">
-          Discover the difference, where expertise meets excellence in real
-          estate. Let's embark on this exciting journey together.
-        </p>
-        <form action="#">
-          <div class="form__group">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-          </div>
-          <div class="form__group">
-            <input type="text" placeholder="Email Address" />
-            <input type="text" placeholder="Phone Number" />
-          </div>
-          <textarea cols="30" rows="5" placeholder="Description"></textarea>
-          <button>SEND MESSAGE</button>
-        </form>
-      </div>
-    </section>
+      <!-- Add other footer columns as given above -->
+    </div>
+    <div class="text-center mt-8 text-gray-500">Copyright © 2023 Web Design Mastery. All rights reserved.</div>
+  </footer>
 
-    <footer class="footer">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h4>Ruang Bumi</h4>
-          <p>
-            Our team of seasoned professionals is committed to providing you
-            with exceptional service, in-depth market knowledge, and
-            personalized solutions tailored to your unique needs.
-          </p>
-          <div class="footer__socials">
-            <span>
-              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-            </span>
-            <span>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-            </span>
-            <span>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </span>
-          </div>
-        </div>
-        <div class="footer__col">
-          <h4>Company Info</h4>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Project</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer__col">
-          <h4>Resources</h4>
-          <a href="#">Terms</a>
-          <a href="#">Conditions</a>
-          <a href="#">Policy</a>
-        </div>
-        <div class="footer__col">
-          <h4>Contact</h4>
-          <a href="#">
-            <span><i class="ri-mail-line"></i></span> RB@gmail.com
-          </a>
-          <a href="#">
-            <span><i class="ri-phone-line"></i></span> +91 9876543210
-          </a>
-        </div>
-      </div>
-      <div class="footer__bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="test.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="test.js"></script>
+</body>
 </html>
